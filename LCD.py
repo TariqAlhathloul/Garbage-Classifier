@@ -30,7 +30,7 @@ class LCD:
         # Open I2C interface
         if pi_rev == 2:
             # Rev 2 Pi uses 1
-            self.bus = smbus.SMBus(1)
+            self.bus = smbus.SMBus(4)
         elif pi_rev == 1:
             # Rev 1 Pi uses 0
             self.bus = smbus.SMBus(0)
